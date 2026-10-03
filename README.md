@@ -29,3 +29,25 @@ public class Conta {
 
 Nesse caso, o setter setSaldo() controla a alteração do atributo e impede que o objeto receba um saldo negativo. Dessa forma, o encapsulamento ajuda a preservar a integridade dos dados da classe.
 
+--------------------------------------------------------------------------------------------
+
+02 - Considere que você está modelando um sistema de controle de biblioteca.
+Responda:
+a) Quais informações você considera relevantes para representar um livro em um sistema?
+Algumas informações importantes seriam:
+código;
+título;
+autor;
+ano de publicação;
+editora;
+quantidade de páginas;
+gênero;
+quantidade disponível no estoque da biblioteca;
+situação do livro (disponível ou emprestado).
+
+b) Por que podemos dizer que uma classe Livro seria uma abstração no seu código?
+A classe Livro é uma abstração porque representa, no código, apenas as características e comportamentos de um livro que são relevantes para o sistema da biblioteca. Detalhes do livro físico que não importam para o sistema, como cor da capa, peso ou tipo de papel, são deixados de lado. Em contrapartida, são mantidos atributos como título, autor, código e disponibilidade, e comportamentos como emprestar e devolver. Assim, a classe funciona como um modelo simplificado que esconde a complexidade do objeto real e expõe só o necessário.
+
+
+c) Liste ao menos 3 métodos que fariam sentido existir nessa classe.
+Alguns métodos que fariam sentido na classe Livro são: emprestar(), que altera a situação do livro para indisponível; devolver(), que o torna disponível novamente; e estaDisponivel(), que informa se o livro pode ser emprestado. Também seriam úteis exibirInfo(), para mostrar os dados do livro, e getters como getTitulo() e getAutor(), para acessar as informações de forma controlada.
